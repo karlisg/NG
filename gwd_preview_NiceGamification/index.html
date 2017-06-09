@@ -8,6 +8,7 @@
   <link href="gwdpage_style.css" rel="stylesheet" data-version="8" data-exports-type="gwd-page">
   <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-pagedeck">
   <link href="gwdimage_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-image">
+  <link href="gwdyoutube_style.css" rel="stylesheet" data-version="18" data-exports-type="gwd-youtube">
   <style type="text/css" id="gwd-lightbox-style">.gwd-lightbox {
     overflow: hidden;
     border: 1px dashed rgb(160, 160, 160);
@@ -127,35 +128,42 @@ body {
     width: 50px;
     top: 145px;
     left: 118px;
+}
+.gwd-youtube-1v14 {
+    position: absolute;
+    width: 200px;
+    height: 140px;
+    left: 704px;
+    top: 94px;
 }</style><script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script><script data-source="gwd_webcomponents_min.js" data-version="5" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"></script>
-  <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" src="gwdpage_min.js"></script><script data-source="gwdpagedeck_min.js" data-version="9" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
-    <script data-source="gwdimage_min.js" data-version="9" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
+  <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" src="gwdpage_min.js"></script><script data-source="gwdpagedeck_min.js" data-version="9" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script><script data-source="gwdimage_min.js" data-version="9" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
     <script data-source="gwdimagebutton_min.js" data-version="9" data-exports-type="gwd-imagebutton" src="gwdimagebutton_min.js"></script>
-    <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
-    <script type="text/javascript" gwd-events="handlers">
-      gwd.auto_Gwd_imagebutton_1Click = function(event) {
-        // GWD Predefined Function
-        gwd.actions.gwdPagedeck.goToPage('pagedeck', 'page1_1', 'fade', 500, 'ease-in-out', 'top');
-      };
-      gwd.auto_Gwd_imagebutton_2Click = function(event) {
-        // GWD Predefined Function
-        gwd.actions.gwdPagedeck.goToPreviousPage('pagedeck', false, 'fade', 500, 'ease-in-out', 'top');
-      };
-    </script>
-    <script type="text/javascript" gwd-events="registration">
-      // Support code for event handling in Google Web Designer
-       // This script block is auto-generated. Please do not edit!
-      gwd.actions.events.registerEventHandlers = function(event) {
-        gwd.actions.events.addHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
-        gwd.actions.events.addHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click, false);
-      };
-      gwd.actions.events.deregisterEventHandlers = function(event) {
-        gwd.actions.events.removeHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
-        gwd.actions.events.removeHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click, false);
-      };
-      document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
-      document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
-    </script>
+      <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
+      <script type="text/javascript" gwd-events="handlers">
+        gwd.auto_Gwd_imagebutton_1Click = function(event) {
+          // GWD Predefined Function
+          gwd.actions.gwdPagedeck.goToPage('pagedeck', 'page1_1', 'fade', 500, 'ease-in-out', 'top');
+        };
+        gwd.auto_Gwd_imagebutton_2Click = function(event) {
+          // GWD Predefined Function
+          gwd.actions.gwdPagedeck.goToPreviousPage('pagedeck', false, 'fade', 500, 'ease-in-out', 'top');
+        };
+      </script>
+      <script type="text/javascript" gwd-events="registration">
+        // Support code for event handling in Google Web Designer
+         // This script block is auto-generated. Please do not edit!
+        gwd.actions.events.registerEventHandlers = function(event) {
+          gwd.actions.events.addHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
+          gwd.actions.events.addHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click, false);
+        };
+        gwd.actions.events.deregisterEventHandlers = function(event) {
+          gwd.actions.events.removeHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
+          gwd.actions.events.removeHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click, false);
+        };
+        document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
+        document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
+      </script>
+      <script data-source="gwdyoutube_min.js" data-version="18" data-exports-type="gwd-youtube" src="gwdyoutube_min.js"></script>
 </head>
 
 <body class="document-body">
@@ -164,6 +172,7 @@ body {
       <div class="gwd-page-content page1-content gwd-div-819c">
         <gwd-imagebutton id="gwd-imagebutton_1" up-image="homero.png" over-image="" down-image="" scaling="contain" class="gwd-imagebutton-1srg" data-gwd-name="user"></gwd-imagebutton>
         <img is="gwd-image" source="giphy.gif" id="gwd-image_1" class="gwd-img-1i3i">
+        <gwd-youtube id="gwd-youtube_1" video-url="https://www.youtube.com/watch?v=Mh4f9AYRCZY" annotations="" related="" title="" class="gwd-youtube-1v14" data-gwd-name="Training_1"></gwd-youtube>
       </div>
     </div>
     <div id="page1_1" is="gwd-page" class="gwd-page-wrapper gwd-lightbox gwd-div-1k9o" data-gwd-width="1280px" data-gwd-height="720px" data-gwd-name="map">
