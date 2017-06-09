@@ -135,6 +135,13 @@ body {
     height: 140px;
     left: 704px;
     top: 94px;
+}
+.gwd-imagebutton-9yox {
+    position: absolute;
+    left: 949px;
+    top: 43px;
+    width: 120px;
+    height: 120px;
 }</style><script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script><script data-source="gwd_webcomponents_min.js" data-version="5" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"></script>
   <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" src="gwdpage_min.js"></script><script data-source="gwdpagedeck_min.js" data-version="9" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script><script data-source="gwdimage_min.js" data-version="9" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
     <script data-source="gwdimagebutton_min.js" data-version="9" data-exports-type="gwd-imagebutton" src="gwdimagebutton_min.js"></script>
@@ -148,6 +155,10 @@ body {
           // GWD Predefined Function
           gwd.actions.gwdPagedeck.goToPreviousPage('pagedeck', false, 'fade', 500, 'ease-in-out', 'top');
         };
+        gwd.auto_Gwd_imagebutton_3Click = function(event) {
+          // GWD Predefined Function
+          gwd.actions.gwdPagedeck.goToPage('pagedeck', 'page1_1', 'none', 500, 'ease-in-out', 'top');
+        };
       </script>
       <script type="text/javascript" gwd-events="registration">
         // Support code for event handling in Google Web Designer
@@ -155,10 +166,12 @@ body {
         gwd.actions.events.registerEventHandlers = function(event) {
           gwd.actions.events.addHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
           gwd.actions.events.addHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click, false);
+          gwd.actions.events.addHandler('gwd-imagebutton_3', 'click', gwd.auto_Gwd_imagebutton_3Click, false);
         };
         gwd.actions.events.deregisterEventHandlers = function(event) {
           gwd.actions.events.removeHandler('gwd-imagebutton_1', 'click', gwd.auto_Gwd_imagebutton_1Click, false);
           gwd.actions.events.removeHandler('gwd-imagebutton_2', 'click', gwd.auto_Gwd_imagebutton_2Click, false);
+          gwd.actions.events.removeHandler('gwd-imagebutton_3', 'click', gwd.auto_Gwd_imagebutton_3Click, false);
         };
         document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
         document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
@@ -173,6 +186,7 @@ body {
         <gwd-imagebutton id="gwd-imagebutton_1" up-image="homero.png" over-image="" down-image="" scaling="contain" class="gwd-imagebutton-1srg" data-gwd-name="user"></gwd-imagebutton>
         <img is="gwd-image" source="giphy.gif" id="gwd-image_1" class="gwd-img-1i3i">
         <gwd-youtube id="gwd-youtube_1" video-url="https://www.youtube.com/watch?v=Mh4f9AYRCZY" annotations="" related="" title="" class="gwd-youtube-1v14" data-gwd-name="Training_1"></gwd-youtube>
+        <gwd-imagebutton id="gwd-imagebutton_3" up-image="gold.png" over-image="" down-image="" scaling="cover" class="gwd-imagebutton-9yox"></gwd-imagebutton>
       </div>
     </div>
     <div id="page1_1" is="gwd-page" class="gwd-page-wrapper gwd-lightbox gwd-div-1k9o" data-gwd-width="1280px" data-gwd-height="720px" data-gwd-name="map">
